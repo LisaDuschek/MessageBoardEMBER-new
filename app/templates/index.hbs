@@ -2,7 +2,7 @@
 
 
 
-<p>Submit your message and see what completely unhelpful answers you receive</p>
+<p>Submit your question and see what completely unhelpful answers you receive</p>
 
 
 <h2> All the questions: </h2>
@@ -15,13 +15,3 @@
 {{new-question save="save"}}
 
 <hr>
-
-<h3> Answers </h3>
-
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{#link-to 'answer' answer.id}}{{answer.content}}{{/link-to}}</li>
-  {{/each}}
-</ul>
-
-{{new-answer saveAnswer="saveAnswer"}}

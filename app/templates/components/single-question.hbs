@@ -14,7 +14,7 @@ Written by <em>{{question.author}}</em>
 
 <div class="jumbotron answer answerlistlist">
 
-  <h3>Answers to {{question.author}}'s inquiry:</h3><br>
+  <h3> All the answers to {{question.author}}'s inquiry:</h3><br>
   {{#each question.answers as |answer|}}
     <div class="posted-answer">
       <h2>{{answer.user}}</h2>
@@ -27,6 +27,5 @@ Written by <em>{{question.author}}</em>
 
 </div>
 
-<div class="jumbotron answer answerform">
+
   {{new-answer saveAnswer="saveAnswer" question=question}}
-</div>
