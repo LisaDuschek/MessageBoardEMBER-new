@@ -4,8 +4,10 @@ export default Ember.Component.extend({
     actions: {
    saveAnswer() {
      var params = {
-       author: this.get('author'),
+       user: this.get('user'),
+       date: this.get('date'),
        content: this.get('content'),
+       question: this.get('question')
      };
      this.sendAction('saveAnswer', params);
    }
