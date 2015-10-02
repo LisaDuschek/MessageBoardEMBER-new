@@ -1,0 +1,10 @@
+{{yield}}
+
+<!-- <li>{{question.question}} by {{question.author}} <br> {{question.notes}} <button {{action 'delete' question}}>Delete</button> {{update-rental rental=rental update="update"}}</li> -->
+
+<h3>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h3>
+
+<h5> by: <em>{{question.author}}</em></h5>
+
+{{update-question question=question update="update"}}
+<button {{action 'delete' question}}>Delete question</button>

@@ -1,0 +1,17 @@
+{{yield}}
+
+<div class="new-answer-form">
+  <form>
+    <div class="form-group">
+      <label for="user">Author:</label>
+      {{input class="form-control" value=user id="user"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Your answer:</label>
+      {{input class="form-control" value=content id="content"}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'saveAnswer'}}>Save</button>
+  </form>
+</div>
